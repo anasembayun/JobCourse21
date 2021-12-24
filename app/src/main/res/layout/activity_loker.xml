@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_ungu"
+    tools:context=".RegisterOneAct">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="251dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Loker"
+        android:textColor="#FFF"
+        android:textFontWeight="600"
+        android:textSize="7.2pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_nav"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="48dp"
+        android:background="#3B2E64"
+        android:src="@drawable/strip_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/liniearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/linear_outline"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+        <ImageView
+            android:id="@+id/img_loker"
+            android:layout_marginStart="5dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/img_prsh" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textFontWeight="600"
+                    android:text="Loker"
+                    android:textSize="4.4pt"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/perusahaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Nama perusahaan"
+                    android:textSize="4.4pt"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/black"
+                    android:text="Alamat perusahaan"
+                    android:textSize="4.4pt"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_web"
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/orange_35"
+            android:fontFamily="@font/roboto_light"
+            android:text="Buka \n Website"
+            android:textSize="3.6pt" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

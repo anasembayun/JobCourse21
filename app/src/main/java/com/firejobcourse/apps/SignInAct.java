@@ -82,7 +82,7 @@ public class SignInAct extends AppCompatActivity {
                     }
                     else {
                         reference = FirebaseDatabase.getInstance().getReference()
-                                .child("Users").child(username);
+                                .child("Pengguna").child(username);
 
                         reference.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override

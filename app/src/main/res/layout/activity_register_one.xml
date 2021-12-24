@@ -130,7 +130,7 @@
                 />
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/email_address"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_input_edit"
@@ -162,7 +162,7 @@
                 />
 
             <EditText
-                android:id="@+id/email_address"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_input_edit"

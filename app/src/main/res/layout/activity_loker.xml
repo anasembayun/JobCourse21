@@ -118,7 +118,6 @@
 
 
                     </LinearLayout>
-
                     <Button
                         android:id="@+id/btn_web"
                         android:layout_width="65dp"
@@ -130,6 +129,8 @@
                         android:textSize="3.6pt" />
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
+
+
+</androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

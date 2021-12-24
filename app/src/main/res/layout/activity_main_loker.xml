@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_ungu"
+    tools:context=".RegisterOneAct">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="251dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Loker"
+        android:textColor="#FFF"
+        android:textFontWeight="600"
+        android:textSize="7.2pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_nav"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="48dp"
+        android:background="#3B2E64"
+        android:src="@drawable/strip_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="115dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_loker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

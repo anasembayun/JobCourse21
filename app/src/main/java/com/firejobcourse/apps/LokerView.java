@@ -1,32 +1,34 @@
-package com.firejobcourse.apps.adapter;
+package com.firejobcourse.apps;
 
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.firejobcourse.apps.R;
-import com.firejobcourse.apps.model.DataLoker;
+/**
+ * Created by Avin on 08/08/2018.
+ */
 
+public class LokerView extends RecyclerView.ViewHolder {
 
-public class LokerAdapter extends RecyclerView.ViewHolder {
     public TextView tvpekerjaan;
     public TextView tvperusahaan;
     public TextView tvalamat;
     public Button btnOpen;
-    public LokerAdapter(@NonNull View itemView) {
+
+    public LokerView(View itemView) {
         super(itemView);
         tvpekerjaan = itemView.findViewById(R.id.pekerjaan);
         tvperusahaan = itemView.findViewById(R.id.perusahaan);
         tvalamat = itemView.findViewById(R.id.alamat);
         btnOpen = itemView.findViewById(R.id.btn_web);
     }
-    public void bindToPerusahaan(DataLoker loker, View.OnClickListener onClickListener){
+
+    public void bindToPerusahaan(Loker loker, View.OnClickListener onClickListener){
         tvpekerjaan.setText(loker.pekerjaan);
         tvperusahaan.setText(loker.perusahaan);
-        tvalamat.setText(loker.alamat);
+        tvalamat .setText(loker.alamat);
         btnOpen.setOnClickListener(onClickListener);
     }
 }

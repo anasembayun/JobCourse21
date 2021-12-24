@@ -75,8 +75,8 @@ public class RegisterTwoAct extends AppCompatActivity {
 
                 //menyimpan file di database
 
-                reference=FirebaseDatabase.getInstance().getReference().child("Users").child(username_key_new);
-                storage=FirebaseStorage.getInstance().getReference().child("Photouser").child(username_key_new);
+                reference=FirebaseDatabase.getInstance().getReference().child("Pengguna").child(username_key_new);
+                storage=FirebaseStorage.getInstance().getReference().child("Photopengguna").child(username_key_new);
 
                 //validasi file
 
@@ -91,7 +91,7 @@ public class RegisterTwoAct extends AppCompatActivity {
                                     getReference().getDownloadUrl().toString();
                             reference.getRef().child("url_photo_profile").setValue(uri_photo);
                             reference.getRef().child("nama_lengkap").setValue(nama_lengkap.getText().toString());
-                            reference.getRef().child("nik").setValue(bio.getText().toString());
+                            reference.getRef().child("bio").setValue(bio.getText().toString());
                         }
                     }).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                         @Override

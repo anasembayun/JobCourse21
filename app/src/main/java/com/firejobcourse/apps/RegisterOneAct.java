@@ -49,7 +49,7 @@ public class RegisterOneAct extends AppCompatActivity {
 
                 //untuk menyimpan data di firebase
 
-                reference = FirebaseDatabase.getInstance().getReference().child("Users")
+                reference = FirebaseDatabase.getInstance().getReference().child("Pengguna")
                         .child(username.getText().toString());
                 reference.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
